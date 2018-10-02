@@ -44,10 +44,12 @@ This contains 1 million ratings from 6000 users on 4000 movies. There are 5 leve
 #### These below steps are not mandatory unless you have enough space to download and store dataset onto the local.
 
 After downloading the dataset to your local, here is a hadoop command that copies the local data to HDFS, as we suggest to store and read large datasets from HDFS.
-
-> hdfs dfs -copyFromLocal <local_source_path> <hadoop_dest_path>
+```
+hdfs dfs -copyFromLocal <local_source_path> <hadoop_dest_path>
+```
 
 
 Here are some sample steps that shows how to mention the hadoop path inside the code to read model and dataset from HDFS;
-
-> movielens_data = movielens.get_id_ratings("hdfs:///user/leelau/zoo/recommendation-ncf/*") (Reading the dataset from HDFS)
+```
+movielens_data = movielens.get_id_ratings("hdfs:///user/leelau/zoo/recommendation-ncf/*") (Reading the dataset from HDFS)
+```

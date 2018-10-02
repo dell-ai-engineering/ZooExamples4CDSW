@@ -37,12 +37,13 @@ Download the video using any of the video downloader and here is the link of the
 #### These below steps are not mandatory unless you have enough space to download and store dataset onto the local.
 
 After downloading the pre-trained model to your local, here is a hadoop command that copies the local data to HDFS, as we suggest to store and read large datasets from HDFS. 
-
-> hdfs dfs -copyFromLocal <local_source_path> <hadoop_dest_path>
+```
+hdfs dfs -copyFromLocal <local_source_path> <hadoop_dest_path>
+```
 
 
 Here are some sample steps that shows how to mention the hadoop path inside the code to read model and dataset from HDFS;
-
-> model_path = "hdfs:///user/leelau/zoo/obj-det/apps/analytics-zoo_ssd-mobilenet-300x300_PASCAL_0.1.0.model" (Reading Pre-trained model from HDFS)
-
-> path = "hdfs:///user/leelau/zoo/obj-det/apps/train_dog.mp4" (Reading the video dataset from HDFS)
+```
+model_path = "hdfs:///user/leelau/zoo/obj-det/apps/analytics-zoo_ssd-mobilenet-300x300_PASCAL_0.1.0.model" (Reading Pre-trained model from HDFS)
+path = "hdfs:///user/leelau/zoo/obj-det/apps/train_dog.mp4" (Reading the video dataset from HDFS)
+```

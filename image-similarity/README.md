@@ -56,21 +56,18 @@ wget http://places2.csail.mit.edu/models_places365/vgg16_places365.caffemodel
 #### These below steps are not mandatory unless you have enough space to download and store dataset onto the local.
 
 After downloading all the models and images to your local, here is a hadoop command that copies the local data to HDFS, as we suggest to store and read large datasets from HDFS.
- 
-> hdfs dfs -copyFromLocal <local_source_path> <hadoop_dest_path> (This step repeats for step-1,2,3,4 for moving all those downloaded data to HDFS)
+``` 
+hdfs dfs -copyFromLocal <local_source_path> <hadoop_dest_path> (This step repeats for step-1,2,3,4 for moving all those downloaded data to HDFS)
+```
 
 
 Here are some sample steps that shows how to mention the hadoop path inside the code to read models and dataset from HDFS;
-
-> image_path = "hdfs:///user/leelau/zoo/images/img-classify/" (Reading images of bathroom, bedroom, house, kitchen from HDFS)
-
-> model_def_path = "hdfs:///user/leelau/zoo/images/googlenet_places365/deploy.prototxt" (Reading deploy.prototxt of googlenet-places365 model from HDFS)
-
-> model_weight_path = "hdfs:///user/leelau/zoo/images/googlenet_places365/googlenet_places365.caffemodel" (Reading caffemodel of googlenet-places365 model from HDFS)
-
-> vgg_def_path = "hdfs:///user/leelau/zoo/images/vgg_16_places365/deploy.prototxt" (Reading deploy.prototxt of vgg_16_places365 model from HDFS) 
-
-> vgg_weight_path = "hdfs:///user/leelau/zoo/images/vgg_16_places365/vgg16_places365.caffemodel" (Reading caffemodel of vgg_16_places365 model from HDFS)
-
-> image_path = "hdfs:///user/leelau/zoo/images/samples/*" (Reading sample images from HDFS)
+```
+image_path = "hdfs:///user/leelau/zoo/images/img-classify/" (Reading images of bathroom, bedroom, house, kitchen from HDFS)
+model_def_path = "hdfs:///user/leelau/zoo/images/googlenet_places365/deploy.prototxt" (Reading deploy.prototxt of googlenet-places365 model from HDFS)
+model_weight_path = "hdfs:///user/leelau/zoo/images/googlenet_places365/googlenet_places365.caffemodel" (Reading caffemodel of googlenet-places365 model from HDFS)
+vgg_def_path = "hdfs:///user/leelau/zoo/images/vgg_16_places365/deploy.prototxt" (Reading deploy.prototxt of vgg_16_places365 model from HDFS) 
+vgg_weight_path = "hdfs:///user/leelau/zoo/images/vgg_16_places365/vgg16_places365.caffemodel" (Reading caffemodel of vgg_16_places365 model from HDFS)
+image_path = "hdfs:///user/leelau/zoo/images/samples/*" (Reading sample images from HDFS)
+```
 

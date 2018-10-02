@@ -51,13 +51,13 @@ The following commands copy about 1100 images of cats and dogs into demo/cats an
 #### These below steps are not mandatory unless you have enough space to download and store dataset onto the local.
 
 After downloading the pre-trained model and images to your local, here is a hadoop command that copies the local data to HDFS, as we suggest to store and read large datasets from HDFS.
-
-> hdfs dfs -copyFromLocal <local_source_path> <hadoop_dest_path>
+```
+hdfs dfs -copyFromLocal <local_source_path> <hadoop_dest_path>
+```
 
 
 Here are some sample steps that shows how to mention the hadoop path inside the code to read model and dataset from HDFS;
-
-> model_path = "hdfs:///user/leelau/zoo/demo/bigdl_inception-v1_imagenet_0.4.0.model" (Reading Pre-trained model from HDFS)
-
-> image_path = "hdfs:///user/leelau/zoo/demo/*/*" (Reading the dogs and cats images from HDFS)
-
+```
+model_path = "hdfs:///user/leelau/zoo/demo/bigdl_inception-v1_imagenet_0.4.0.model" (Reading Pre-trained model from HDFS)
+image_path = "hdfs:///user/leelau/zoo/demo/*/*" (Reading the dogs and cats images from HDFS)
+```
