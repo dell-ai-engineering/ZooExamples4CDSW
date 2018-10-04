@@ -1,4 +1,4 @@
-# DellEMC Analytics-Zoo Examples for Cloudera Data Science Workbench
+# Analytics-Zoo Examples for Cloudera Data Science Workbench
 
 ## Overview
 This respository include examples of analytics-zoo makes easy to build deep learning application on Spark and BigDL, by providing an end-to-end Analytics + AI Platform. These examples are packaged for Cloudera Data Science Workbench and can be downloaded as a CDSW template.
