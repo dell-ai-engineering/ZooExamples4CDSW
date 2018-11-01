@@ -12,7 +12,7 @@ For detailed documentation, please refer to the following: [Intel Analytics-Zoo]
 
 ## Pre-requisites
 Environment:
--See each indivdual example model for specific requirements
+- See each indivdual example model for specific requirements
 
 Run Model with CDSW:
 - Build the Analytics Zoo Engine.  See detailed information [here](https://github.com/dell-ai-engineering/bigdlengine4cdsw).
