@@ -15,6 +15,6 @@ Environment:
 -See each indivdual example model for specific requirements
 
 Run Model with CDSW:
--Build the Analytics Zoo Engine.  See detailed information [here](https://github.com/dell-ai-engineering/bigdlengine4cdsw).
--Create a folder in CDSW under your project and import the model files specified.
--Make sure the spark-defaults.conf file exists with the appropriate configuration for training the model.  Add or change parameter settings as needed.
+- Build the Analytics Zoo Engine.  See detailed information [here](https://github.com/dell-ai-engineering/bigdlengine4cdsw).
+- Create a folder in CDSW under your project and import the model files specified.
+- Make sure the spark-defaults.conf file exists with the appropriate configuration for training the model.  Add or change parameter settings as needed.
