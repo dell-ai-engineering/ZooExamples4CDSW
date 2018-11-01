@@ -8,4 +8,4 @@ Analytics Zoo seamlessly unites Spark, TensorFlow, Keras and BigDL programs into
 
 Analytics Zoo provides several built-in deep learning models that you can use for a variety of problem types such as anomaly detection, object detection, image classification, etc.
 
-For detailed documentation, Please refer to this [Intel Analytics-Zoo](https://analytics-zoo.github.io/0.2.0/#)
+For detailed documentation, please refer to the following: [Intel Analytics-Zoo](https://analytics-zoo.github.io/0.2.0/#)
