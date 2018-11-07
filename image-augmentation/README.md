@@ -21,10 +21,8 @@
     spark.driver.cores                                  1
     spark.executor.instances                            4
 
-Download the local image dataset "test.jpg" from the workbench terminal access menu by using the following command:
-```
-wget https://github.com/intel-analytics/analytics-zoo/blob/master/apps/image-augmentation/image/test.jpg
-```   
+Download the local image dataset "test.jpg" from the image folder and copy that to your working folder/directory.
+
 
 Make sure we also need to create the empty folder "/tmp" under your project directory in the CDSW since this example will check for the "/tmp" folder to write the test image.
 
