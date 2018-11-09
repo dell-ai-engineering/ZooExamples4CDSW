@@ -31,7 +31,7 @@
 
 1. Download the GoogLeNet-places365 model from the workbench terminal access menu by using the below commands:
 ```
-wget https://github.com/CSAILVision/places365/blob/master/deploy_googlenet_places365.prototxt
+wget https://raw.githubusercontent.com/CSAILVision/places365/master/deploy_googlenet_places365.prototxt
 wget http://places2.csail.mit.edu/models_places365/googlenet_places365.caffemodel
 ```
 
@@ -43,7 +43,7 @@ Unpack the downloaded tar file and copy the bathroom, bedroom, house, kitchen fo
 
 3. Download the VGG16-places365 model from the workbench terminal access menu by using the below commands:
 ```
-wget https://github.com/CSAILVision/places365/blob/master/deploy_vgg16_places365.prototxt
+wget https://raw.githubusercontent.com/CSAILVision/places365/master/deploy_vgg16_places365.prototxt
 wget http://places2.csail.mit.edu/models_places365/vgg16_places365.caffemodel
 ```
 
