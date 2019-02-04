@@ -47,7 +47,7 @@ visualized = visualizer(output).get_image(to_chw=False).collect()
 # Make sequence of frames back to a clip by given fps.
 clip = ImageSequenceClip(visualized, fps=5)
 
-output_path = '/home/cdsw/object-detection/tmp/out.mp4'
+output_path = '/home/cdsw/object-detection/out.mp4'
 clip.write_videofile(output_path, audio=False)
 clip.write_gif("train_dog.gif")
 
