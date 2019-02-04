@@ -22,7 +22,3 @@
     spark.executor.instances                            4
 
 * In this example, we have already downloaded the image dataset and put that into a folder as per the example that it needs to be. So you can directly run the example with the dataset provided in the image folder.
-
-
-* Make sure we also need to create the empty folder "/tmp" under the image-augmentation example **(/home/cdsw/image-augmentation/tmp)** in the project directory of your CDSW since this example check for the "/tmp" folder to write the test image.
-
