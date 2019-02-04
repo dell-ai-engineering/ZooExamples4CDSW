@@ -42,8 +42,8 @@ path = "/home/cdsw/image-augmentation/image/test.jpg"
     
 def transform_display(transformer, image_set):
     out = transformer(image_set)
-    cv2.imwrite('/home/cdsw/image-augmentation/tmp/tmp.jpg', out.get_image(to_chw=False)[0])
-    display(Image(filename='/home/cdsw/image-augmentation/tmp/tmp.jpg'))
+    cv2.imwrite('/home/cdsw/image-augmentation/tmp.jpg', out.get_image(to_chw=False)[0])
+    display(Image(filename='/home/cdsw/image-augmentation/tmp.jpg'))
     
 # Adjust the image brightness
 brightness = ImageBrightness(0.0, 32.0)
