@@ -5,6 +5,7 @@ sc = init_nncontext("Anomaly Detection Example")
 import pandas as pd
 from pandas import DataFrame as df
 import numpy as np
+import pandas as pd
 
 import matplotlib
 matplotlib.use('Agg')
@@ -22,13 +23,13 @@ try:
 except Exception as e:
     print("nyc_taxi.csv doesn't exist")
     print("you can run $ANALYTICS_ZOO_HOME/bin/data/NAB/nyc_taxi/get_nyc_taxi.sh to download nyc_taxi.csv")
-   
+
 print(df.info())
 
-# check the timestamp format and frequence 
+# check the timestamp format and frequence
 print(df['timestamp'].head(10))
 
-# check the mean of passenger number 
+# check the mean of passenger number
 print(df['value'].mean())
 
 # change the type of timestamp column for plotting
@@ -41,7 +42,7 @@ ax.plot(df['datetime'], df['value'], color='blue', linewidth=0.6)
 ax.set_title('NYC taxi passengers throughout time')
 
 plt.xlabel('datetime')
-plt.xticks(rotation=45) 
+plt.xticks(rotation=45)
 plt.ylabel('The Number of NYC taxi passengers')
 plt.legend(loc='upper left')
 plt.show()
@@ -91,7 +92,7 @@ np_scaled = min_max_scaler.fit_transform(data_n)
 data_n = pd.DataFrame(np_scaled)
 
 #important parameters and train/test size
-prediction_time = 1 
+prediction_time = 1
 testdatasize = 1000
 unroll_length = 50
 testdatacut = testdatasize + unroll_length  + 1
@@ -161,7 +162,7 @@ for u in range(len(y_test)):
     pr = p[u][0]
     ratio.append((y_test[u]/pr)-1)
     diff.append(abs(y_test[u]- pr))
-    
+
 # plot the predicted values and actual values (for the test data)
 fig, axs = plt.subplots()
 
